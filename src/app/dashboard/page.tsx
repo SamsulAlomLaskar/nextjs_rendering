@@ -8,7 +8,17 @@ const DashboardPage = () => {
   return (
     <div>
       <h1>Dashboard</h1>
-      <input onChange={(e) => setName(e.target.value)} />
+      <input
+        placeholder="enter name"
+        onChange={(e) => setName(e.target.value)}
+        style={{
+          width: "30%",
+          padding: "5px",
+          marginBottom: "16px",
+          border: "1px solid #ccc",
+          borderRadius: "7px",
+        }}
+      />
       <p>Hello {name}</p>
     </div>
   );
